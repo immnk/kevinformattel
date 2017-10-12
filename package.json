@@ -1,0 +1,33 @@
+{
+  "name": "instoreux",
+  "version": "1.0.0",
+  "description": "A InStore UX bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "bot",
+    "instore",
+    "ux"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^0.9.2",
+    "body-parser": "^1.17.1",
+    "es-money": "^1.1.0",
+    "express": "^4.15.2",
+    "google-images": "^2.1.0",
+    "money": "^0.2.0",
+    "mongoose": "^4.9.9",
+    "q": "^1.5.0",
+    "say": "^0.11.0",
+    "shortid": "^2.2.8",
+    "snowboy": "^1.2.0",
+    "sonus": "^0.1.7",
+    "sox": "^0.1.0",
+    "watson-developer-cloud": "^2.31.1",
+    "websocket": "^1.0.24"
+  }
+}

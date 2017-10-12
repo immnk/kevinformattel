@@ -1,0 +1,37 @@
+.grid_container {
+    padding: 10px;
+    color: $theme-foreground;
+    width: 100vw;
+    height: 100%;
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            background: $theme-foreground;
+            margin: 20px;
+            width: 250px;
+            .card-image {
+                width: 250px;
+                height: 300px;
+                object-fit: cover;
+            }
+            .card-details {
+                text-align: center;
+                color: #333;
+                overflow: auto;
+                .card-title {
+                    text-transform: capitalize;
+                    margin: 0;
+                    padding: 20px 10px;
+                    background: rgb(216, 216, 216);
+                }
+                .card-price {
+                    padding: 10px 5px 5px;
+                }
+                .card_location {
+                    padding: 5px 10px 10px;
+                }
+            }
+        }
+    }
+}

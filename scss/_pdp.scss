@@ -1,0 +1,71 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .img_section {
+        width: 50%;
+        height: calc(100vh - 140px);
+        background: url(../img/dress.jpg);
+        background-size: cover;
+        background-position: 50%;
+        position: fixed;
+        left: 0;
+    }
+    .not_available {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        color: #FFF;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .content_wrapper {
+        position: relative;
+        margin-left: 50%;
+        padding: 20px 40px;
+        color: $theme-foreground;
+        width: 50%;
+        height: 100%;
+        overflow: scroll;
+        header {
+            .title {
+                font-family: $font-secondary;
+                font-size: 3em;
+                text-transform: capitalize;
+            }
+        }
+        .content {
+            ul.sizes {
+                list-style-type: none;
+                display: block;
+                padding: 0;
+                li {
+                    position: relative;
+                    display: inline-block;
+                    background: #FFF;
+                    color: black;
+                    padding: 20px;
+                    width: 50px;
+                    margin: 0 5px;
+                    &.not_available {
+                        background: #000;
+                        color: #FFF;
+                    }
+                    &.matched {
+                        background-color: #ea4961;
+                        border: 1px solid #FFF;
+                        color: #FFF;
+                    }
+                    &.animated {
+                        animation-duration: 1s;
+                    }
+                }
+            }
+        }
+    }
+}

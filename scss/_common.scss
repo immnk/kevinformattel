@@ -1,0 +1,118 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: $font-primary;
+}
+
+.cng {
+    background: $bg-color;
+    .section {
+        width: 100vw;
+        height: calc(100vh - 140px);
+        overflow: auto;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 30px 50px;
+        background: $theme-foreground;
+        color: #000;
+        display: inline-flex;
+        align-items: center;
+        line-height: 40px;
+        font-size: 2em;
+        .icon {
+            width: 80px;
+            position: relative;
+            height: 80px;
+            background: $bg-color;
+            color: $theme-foreground;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        .btn-group {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            margin-top: -17px;
+            .btn {
+                display: inline-block;
+                margin-right: 10px;
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.section {
+    .title {
+        margin: 0;
+        padding: 10px 0;
+        font-family: $font-secondary;
+        color: $theme-foreground;
+    }
+}
+
+ul.reviews {
+    list-style-type: none;
+    display: block;
+    padding: 0;
+    li {
+        display: block;
+        background: #fff;
+        padding: 15px 20px 15px 30px;
+        margin: 0 0 20px;
+        position: relative;
+        line-height: 1.2;
+        color: #000;
+        text-align: justify;
+        border-left: 15px solid #ffda95;
+        border-right: 2px solid #ffda95;
+        &:before {
+            content: "\201C";
+            font-family: Georgia, serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: #999;
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+    }
+}
+
+.strikethrough {
+    position: relative;
+}
+
+.strikethrough:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid;
+    border-color: inherit;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

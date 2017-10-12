@@ -1,0 +1,72 @@
+#billing {
+    .bill_container {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        .bill {
+            width: 300px;
+            background: #FFF;
+            margin: 10px;
+            border: 2px solid #FFF;
+            border-radius: 15px;
+            overflow: hidden;
+            .head_wrapper {
+                position: relative;
+                padding: 10px;
+                background: #E0D0C1;
+                min-height: 120px;
+                .title {
+                    font-size: 1.5em;
+                    text-align: center;
+                    color: #000;
+                    text-transform: lowercase;
+                }
+                .product_image {
+                    position: absolute;
+                    background-image: url(../img/dress.jpg);
+                    width: 100px;
+                    height: 100px;
+                    background-size: cover;
+                    border-radius: 50%;
+                    border: 3px solid #FFF;
+                    bottom: -50px;
+                    left: 50%;
+                    transform: translateX(-50px);
+                }
+            }
+            table.details {
+                display: block;
+                width: 100%;
+                overflow: hidden;
+                padding: 10px;
+                margin-top: 50px;
+                tbody {
+                    display: block;
+                }
+                tr {
+                    display: block;
+                    td {
+                        padding: 0;
+                        width: 48%;
+                        display: inline-block;
+                        text-transform: capitalize;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    h2.price {
+        position: absolute;
+        bottom: 150px;
+        width: 150px;
+        height: 150px;
+        background: #FFF;
+        border: 5px solid #EEE;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: calc(50% - 75px);
+    }
+}

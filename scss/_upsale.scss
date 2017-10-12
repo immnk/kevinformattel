@@ -1,0 +1,54 @@
+.section {
+    position: relative;
+    .title_section {
+        position: fixed;
+        left: 0;
+        right: 0;
+        background: #008080;
+        z-index: 10;
+    }
+    .selected_product {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid #FFF;
+        object-fit: cover;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+    }
+    .sale_container {
+        margin-top: 269px;
+        display: flex;
+        .grid_container {
+            width: 50%;
+            min-height: calc(100vh - 409px);
+            border-top: 2px solid $theme-foreground;
+            padding: 0;
+            &:first-child {
+                border-right: 2px solid $theme-foreground;
+            }
+            .title {
+                border-bottom: 2px solid $theme-foreground;
+                padding: 10px;
+            }
+            .card_location {
+                padding: 5px;
+            }
+            .upsale,
+            .crosssale {
+                justify-content: center;
+                .card {
+                    margin: 20px 0px 20px 20px;
+                    // &:first-child {
+                    //     margin-left: 0;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+#upsale .title {
+    padding: 20px 0 10px 20px;
+}
